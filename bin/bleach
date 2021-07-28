@@ -52,6 +52,8 @@ end
 def resolve_language(filepath)
   basename = File.basename(filepath)
   extension = File.extname(basename)
+  return 'CSS' if extension == '.css'
+  return 'JavaScript' if extension == '.js'
   return 'Ruby' if basename == 'Gemfile'
   return 'Ruby' if basename == 'Capfile'
   return 'Ruby' if basename == 'Onafile'
@@ -60,7 +62,7 @@ def resolve_language(filepath)
   return 'Ruby' if extension == '.rb'
   return 'Ruby' if extension == '.gemspec'
   return 'Ruby' if extension == '.ru'
-  return 'JavaScript' if extension == '.js'
+  return 'SCSS' if extension == '.scss'
   return basename.inspect
 end
 
@@ -68,8 +70,10 @@ end
 file_language = resolve_language(options[:file])
 
 LANGUAGE_MAP = {
-  'Ruby' => 'ruby',
-  'JavaScript' => 'javascript'
+  'CSS'         => 'css',
+  'JavaScript'  => 'javascript',
+  'Ruby'        => 'ruby',
+  'SCSS'        => 'scss'
 }.freeze
 
 if LANGUAGE_MAP.keys.include?(file_language)

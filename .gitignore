@@ -3,3 +3,5 @@
 .rubocop.yml
 .ruby-version
 brakeman.yml
+.stylelintrc.js
+samples/
