@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 module CodeCheck
-  # Template for Stylelint check
-  class Stylelint < AbstractCommand
+  # Template for Stylelint SCSS check
+  class StylelintSCSS < AbstractCommand
     def template
       'docker run ' \
         '--rm ' \

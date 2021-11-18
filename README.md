@@ -36,6 +36,9 @@ Options:
 - JavaScript
   -
   - [ESLint](https://eslint.org/)
+- CSS / SCSS
+  -
+  - [Stylelint](https://stylelint.io/)
 
 ## Demo
 

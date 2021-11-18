@@ -37,7 +37,7 @@ tool_config = config['requiredFiles'].find do |record|
   record['type'] == 'Stylelint Config'
 end['file']
 
-check_command = CodeCheck::Stylelint.new(
+check_command = CodeCheck::StylelintCSS.new(
   pwd: dir,
   image_name: image_name,
   config_file: tool_config,
