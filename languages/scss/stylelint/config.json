@@ -1,0 +1,10 @@
+{
+    "imageName" : "bleach/stylelint",
+    "requiredFiles" : [
+        {
+            "type" : "Stylelint Config",
+            "file" : ".stylelintrc.js"
+        }
+    ]
+
+}
