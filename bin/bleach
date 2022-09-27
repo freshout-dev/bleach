@@ -71,10 +71,10 @@ end
 file_language = resolve_language(options[:file])
 
 LANGUAGE_MAP = {
-  'CSS' => 'css',
+# 'CSS' => 'css',
   'JavaScript' => 'javascript',
   'Ruby' => 'ruby',
-  'SCSS' => 'scss'
+# 'SCSS' => 'scss'
 }.freeze
 
 if LANGUAGE_MAP.keys.include?(file_language)

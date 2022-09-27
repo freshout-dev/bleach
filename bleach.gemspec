@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = %q{bleach}
-  spec.version = '0.0.7'
+  spec.version = '0.0.8'
   spec.date = %q{2021-11-26}
   spec.summary = %q{bleach - code check tool}
 
